@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OFFGRID</title>
+<meta name="description" content="OFFGRID — Anant National University's Foundation Festival, October 5–9, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home">
+
+<header class="hero">
+  <img class="site-logo" src="images/logo-college.png" alt="Anant National University logo">
+
+  <span class="eyebrow">Anant National University Presents</span>
+
+  <div class="hero__titles">
+    <h1 class="hero__title">Offgrid</h1>
+    <p class="hero__subtitle">Foundation Festival 2026</p>
+  </div>
+
+  <p class="hero__dates">OCTOBER 5–9</p>
+
+  <div class="countdown">
+    <span class="countdown__label">Countdown to Offgrid</span>
+    <div class="countdown__grid" id="countdown-grid">
+      <div class="countdown__unit">
+        <span class="countdown__value" id="cd-days">00</span>
+        <span class="countdown__unit-label">Days</span>
+      </div>
+      <div class="countdown__unit">
+        <span class="countdown__value" id="cd-hours">00</span>
+        <span class="countdown__unit-label">Hours</span>
+      </div>
+      <div class="countdown__unit">
+        <span class="countdown__value" id="cd-minutes">00</span>
+        <span class="countdown__unit-label">Minutes</span>
+      </div>
+      <div class="countdown__unit">
+        <span class="countdown__value" id="cd-seconds">00</span>
+        <span class="countdown__unit-label">Seconds</span>
+      </div>
+    </div>
+    <p class="countdown__message" id="countdown-message" hidden></p>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="open-calls">
+    <h2 class="section__heading">Open Calls</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3 class="card__title">T-Shirt Design Competition</h3>
+        <p class="card__teaser">Design the official OFFGRID '26 tee — your artwork, everyone's back.</p>
+        <div class="card__specs">
+          <span class="tag">A4 Artwork</span>
+          <span class="tag">Multi-Colour</span>
+          <span class="tag">Black / Grey / White</span>
+        </div>
+        <a class="card__link" href="tshirt-competition.html">View Details →</a>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Trophy Design Competition</h3>
+        <p class="card__teaser">Design the trophy that'll be handed out at OFFGRID '26 — cast in ceramic, made locally.</p>
+        <div class="card__specs">
+          <span class="tag">Ceramic</span>
+          <span class="tag">3 Winning Places</span>
+        </div>
+        <a class="card__link" href="trophy-competition.html">View Details →</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Anant National University &middot; OFFGRID Foundation Festival &middot; October 5–9, 2026</p>
+</footer>
+
+<script src="countdown.js"></script>
+</body>
+</html>
