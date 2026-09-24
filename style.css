@@ -148,20 +148,6 @@ button.btn {
 .hero::before { left: 16px; }
 .hero::after { right: 16px; }
 
-.site-logo {
-  position: absolute;
-  top: 20px;
-  left: var(--gutter);
-  height: auto;
-  max-height: 34px;
-  width: auto;
-  max-width: 104px;
-  object-fit: contain;
-  background: var(--white);
-  border: 2px solid var(--yellow);
-  padding: 6px 10px;
-}
-
 .hero__titles {
   display: flex;
   flex-direction: column;
@@ -691,12 +677,6 @@ button.btn {
 
   .cards {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .site-logo {
-    top: 28px;
-    max-height: 46px;
-    max-width: 140px;
   }
 
   .btn-primary {
