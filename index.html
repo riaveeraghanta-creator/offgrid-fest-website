@@ -4,17 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OFFGRID</title>
-<meta name="description" content="OFFGRID — Anant National University's Foundation Festival, October 5–9, 2026.">
+<meta name="description" content="OFFGRID Foundation Festival, October 5–9, 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("is-loading");</script>
 </head>
 <body class="page-home">
 
-<header class="hero">
-  <span class="eyebrow">Anant National University Presents</span>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__logo">
+    <img src="fest%20logo.jpeg" alt="">
+  </div>
+  <div class="loader__progress">
+    <div class="loader__bar"><span class="loader__fill" id="loader-fill"></span></div>
+    <span class="loader__percent" id="loader-percent">0%</span>
+  </div>
+</div>
 
+<header class="hero">
   <div class="hero__titles">
     <h1 class="hero__title">Offgrid</h1>
     <p class="hero__subtitle">Foundation Festival 2026</p>
@@ -53,32 +62,23 @@
     <div class="cards">
       <article class="card">
         <h3 class="card__title">T-Shirt Design Competition</h3>
-        <p class="card__teaser">Design the official OFFGRID '26 tee — your artwork, everyone's back.</p>
-        <div class="card__specs">
-          <span class="tag">A4 Artwork</span>
-          <span class="tag">Multi-Colour</span>
-          <span class="tag">Black / Grey / White</span>
-        </div>
-        <a class="card__link" href="tshirt-competition.html">View Details →</a>
+        <p class="card__teaser">Design the official OFFGRID '26 tee.</p>
+        <a class="card__link" href="https://docs.google.com/forms/d/e/1FAIpQLSe-gzvsDfq8Vagu7DbuXUYoxVcj4P9zY3EVZ4TBSEvcNVy08g/viewform?usp=publish-editor4" target="_blank" rel="noopener">Submit Entry →</a>
       </article>
 
       <article class="card">
         <h3 class="card__title">Trophy Design Competition</h3>
-        <p class="card__teaser">Design the trophy that'll be handed out at OFFGRID '26 — cast in ceramic, made locally.</p>
-        <div class="card__specs">
-          <span class="tag">Ceramic</span>
-          <span class="tag">3 Winning Places</span>
-        </div>
-        <a class="card__link" href="trophy-competition.html">View Details →</a>
+        <p class="card__teaser">Design the trophy that'll be handed out at OFFGRID '26.</p>
       </article>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <p>Anant National University &middot; OFFGRID Foundation Festival &middot; October 5–9, 2026</p>
+  <p>OFFGRID Foundation Festival &middot; October 5–9, 2026</p>
 </footer>
 
 <script src="countdown.js"></script>
+<script src="loader.js"></script>
 </body>
 </html>

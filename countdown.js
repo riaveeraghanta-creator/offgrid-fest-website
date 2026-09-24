@@ -1,7 +1,7 @@
 // OFF GRID — countdown to Foundation Festival 2026
 (function () {
-  var FEST_START = new Date("2026-10-05T00:00:00");
-  var FEST_END = new Date("2026-10-10T00:00:00"); // end of Oct 9
+  var FEST_START = new Date("2026-10-05T00:00:00+05:30");
+  var FEST_END = new Date("2026-10-10T00:00:00+05:30"); // end of Oct 9, IST
 
   var grid = document.getElementById("countdown-grid");
   var message = document.getElementById("countdown-message");
