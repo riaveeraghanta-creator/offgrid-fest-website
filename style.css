@@ -17,12 +17,12 @@
   --white: #FFFFFF;
 
   /* Open-calls palette */
-  --oc-indigo: #3020A0;
-  --oc-coral: #FF5B4D;
-  --oc-lime: #D7F23F;
-  --oc-pink: #FF3FA4;
-  --oc-dark: #171717;
-  --oc-light: #FFF8F0;
+  --oc-cobalt: #3155A4;
+  --oc-raspberry: #C94F6D;
+  --oc-plum: #68406F;
+  --oc-mustard: #D5A63A;
+  --oc-dark: #17151A;
+  --oc-light: #F5EBDD;
 
   --line: rgba(23, 21, 19, 0.14);
   --line-strong: rgba(23, 21, 19, 0.35);
@@ -278,11 +278,11 @@ button.btn {
 }
 
 /* ================================
-   OPEN CALLS — Indigo section, Coral / Lime cards, Hot-pink accent
+   OPEN CALLS — Cobalt section, Raspberry / Plum cards, Mustard accent
    ================================ */
 .section {
   padding: 64px var(--gutter);
-  background: var(--oc-indigo);
+  background: var(--oc-cobalt);
   color: var(--oc-light);
 }
 
@@ -302,7 +302,7 @@ button.btn {
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--oc-pink);
+  background: var(--oc-mustard);
   margin: 0 auto 18px;
 }
 
@@ -324,16 +324,16 @@ button.btn {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Card 1 — T-Shirt — Coral, Hot-pink on hover */
+/* Card 1 — T-Shirt — Raspberry, Mustard on hover */
 .cards .card:nth-child(1) {
-  background: var(--oc-coral);
+  background: var(--oc-raspberry);
   color: var(--oc-dark);
-  border: 1px solid var(--oc-dark);
+  border: 1px solid var(--oc-mustard);
 }
 
 .cards .card:nth-child(1):hover,
 .cards .card:nth-child(1):focus-within {
-  background: var(--oc-pink);
+  background: var(--oc-mustard);
   border-color: var(--oc-dark);
 }
 
@@ -346,27 +346,28 @@ button.btn {
   border-bottom-color: var(--oc-dark);
 }
 
-/* Card 2 — Trophy — Lime, Hot-pink on hover, slight grid-break rotation */
+/* Card 2 — Trophy — Plum with light text, Mustard on hover, slight grid-break rotation */
 .cards .card:nth-child(2) {
-  background: var(--oc-lime);
-  color: var(--oc-dark);
-  border: 1px solid var(--oc-dark);
+  background: var(--oc-plum);
+  color: var(--oc-light);
+  border: 1px solid var(--oc-mustard);
   transform: rotate(0.5deg);
 }
 
 .cards .card:nth-child(2):hover,
 .cards .card:nth-child(2):focus-within {
-  background: var(--oc-pink);
+  background: var(--oc-mustard);
+  color: var(--oc-dark);
   border-color: var(--oc-dark);
 }
 
 .cards .card:nth-child(2) .tag {
-  border-color: var(--oc-dark);
-  color: var(--oc-dark);
+  border-color: currentColor;
+  color: inherit;
 }
 
 .cards .card:nth-child(2) .card__link {
-  border-bottom-color: var(--oc-pink);
+  border-bottom-color: var(--oc-mustard);
 }
 
 .cards .card:nth-child(2):hover .card__link,
@@ -436,6 +437,23 @@ button.btn {
   font-size: 0.76rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.site-footer__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 8px;
+  color: inherit;
+  text-transform: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.site-footer__social:hover,
+.site-footer__social:focus-visible {
+  border-bottom-color: currentColor;
 }
 
 /* ================================
