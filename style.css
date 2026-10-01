@@ -19,7 +19,7 @@
   /* Open-calls palette */
   --oc-cobalt: #3155A4;
   --oc-raspberry: #C94F6D;
-  --oc-plum: #68406F;
+  --oc-raspberry-dark: #B84460;
   --oc-mustard: #D5A63A;
   --oc-dark: #17151A;
   --oc-light: #F5EBDD;
@@ -324,55 +324,30 @@ button.btn {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Card 1 — T-Shirt — Raspberry, Mustard on hover */
-.cards .card:nth-child(1) {
+/* Both cards — Raspberry with Mustard border, darker Raspberry on hover */
+.cards .card {
   background: var(--oc-raspberry);
   color: var(--oc-dark);
   border: 1px solid var(--oc-mustard);
 }
 
-.cards .card:nth-child(1):hover,
-.cards .card:nth-child(1):focus-within {
-  background: var(--oc-mustard);
-  border-color: var(--oc-dark);
+.cards .card:hover,
+.cards .card:focus-within {
+  background: var(--oc-raspberry-dark);
 }
 
-.cards .card:nth-child(1) .tag {
+.cards .card .tag {
   border-color: var(--oc-dark);
   color: var(--oc-dark);
 }
 
-.cards .card:nth-child(1) .card__link {
+.cards .card .card__link {
   border-bottom-color: var(--oc-dark);
 }
 
-/* Card 2 — Trophy — Plum with light text, Mustard on hover, slight grid-break rotation */
+/* Card 2 — Trophy — slight grid-break rotation */
 .cards .card:nth-child(2) {
-  background: var(--oc-plum);
-  color: var(--oc-light);
-  border: 1px solid var(--oc-mustard);
   transform: rotate(0.5deg);
-}
-
-.cards .card:nth-child(2):hover,
-.cards .card:nth-child(2):focus-within {
-  background: var(--oc-mustard);
-  color: var(--oc-dark);
-  border-color: var(--oc-dark);
-}
-
-.cards .card:nth-child(2) .tag {
-  border-color: currentColor;
-  color: inherit;
-}
-
-.cards .card:nth-child(2) .card__link {
-  border-bottom-color: var(--oc-mustard);
-}
-
-.cards .card:nth-child(2):hover .card__link,
-.cards .card:nth-child(2):focus-within .card__link {
-  border-bottom-color: var(--oc-dark);
 }
 
 .card__title {
