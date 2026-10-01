@@ -16,6 +16,14 @@
   --ink: #171513;
   --white: #FFFFFF;
 
+  /* Open-calls palette */
+  --oc-indigo: #3020A0;
+  --oc-coral: #FF5B4D;
+  --oc-lime: #D7F23F;
+  --oc-pink: #FF3FA4;
+  --oc-dark: #171717;
+  --oc-light: #FFF8F0;
+
   --line: rgba(23, 21, 19, 0.14);
   --line-strong: rgba(23, 21, 19, 0.35);
 
@@ -270,12 +278,12 @@ button.btn {
 }
 
 /* ================================
-   OPEN CALLS — Cobalt section, Coral+Pink / Green+Plum cards
+   OPEN CALLS — Indigo section, Coral / Lime cards, Hot-pink accent
    ================================ */
 .section {
   padding: 64px var(--gutter);
-  background: var(--cobalt);
-  color: var(--white);
+  background: var(--oc-indigo);
+  color: var(--oc-light);
 }
 
 .section__heading {
@@ -286,7 +294,7 @@ button.btn {
   text-align: center;
   margin-bottom: 40px;
   letter-spacing: 0.005em;
-  color: var(--white);
+  color: var(--oc-light);
 }
 
 .section__heading::before {
@@ -294,7 +302,7 @@ button.btn {
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--yellow);
+  background: var(--oc-pink);
   margin: 0 auto 18px;
 }
 
@@ -316,49 +324,54 @@ button.btn {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Card 1 — T-Shirt — Coral + Pink */
+/* Card 1 — T-Shirt — Coral, Hot-pink on hover */
 .cards .card:nth-child(1) {
-  background: var(--coral);
-  color: var(--ink);
-  border: 1px solid var(--ink);
+  background: var(--oc-coral);
+  color: var(--oc-dark);
+  border: 1px solid var(--oc-dark);
 }
 
 .cards .card:nth-child(1):hover,
 .cards .card:nth-child(1):focus-within {
-  background: var(--pink);
-  border-color: var(--plum);
+  background: var(--oc-pink);
+  border-color: var(--oc-dark);
 }
 
 .cards .card:nth-child(1) .tag {
-  border-color: var(--ink);
-  color: var(--ink);
+  border-color: var(--oc-dark);
+  color: var(--oc-dark);
 }
 
 .cards .card:nth-child(1) .card__link {
-  border-bottom-color: var(--ink);
+  border-bottom-color: var(--oc-dark);
 }
 
-/* Card 2 — Trophy — Green + Plum, slight grid-break rotation */
+/* Card 2 — Trophy — Lime, Hot-pink on hover, slight grid-break rotation */
 .cards .card:nth-child(2) {
-  background: var(--green);
-  color: var(--white);
-  border: 1px solid var(--white);
+  background: var(--oc-lime);
+  color: var(--oc-dark);
+  border: 1px solid var(--oc-dark);
   transform: rotate(0.5deg);
 }
 
 .cards .card:nth-child(2):hover,
 .cards .card:nth-child(2):focus-within {
-  background: var(--plum);
-  border-color: var(--yellow);
+  background: var(--oc-pink);
+  border-color: var(--oc-dark);
 }
 
 .cards .card:nth-child(2) .tag {
-  border-color: var(--white);
-  color: var(--white);
+  border-color: var(--oc-dark);
+  color: var(--oc-dark);
 }
 
 .cards .card:nth-child(2) .card__link {
-  border-bottom-color: var(--white);
+  border-bottom-color: var(--oc-pink);
+}
+
+.cards .card:nth-child(2):hover .card__link,
+.cards .card:nth-child(2):focus-within .card__link {
+  border-bottom-color: var(--oc-dark);
 }
 
 .card__title {
